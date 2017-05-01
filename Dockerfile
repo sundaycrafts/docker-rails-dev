@@ -1,10 +1,5 @@
 FROM ruby:2.4.1
 
-# for rid of the 'debconf: delaying package configuration, since apt-utils is not installed'
-# https://github.com/phusion/baseimage-docker/issues/319
-ENV DEBIAN_FRONTEND noninteractive
-ENV DEBIAN_FRONTEND teletype
-
 # add node 7.9.0, yarn repogitory and reflesh cache
 # https://nodejs.org/en/download/package-manager/
 # https://yarnpkg.com/lang/en/docs/install/#linux-tab
