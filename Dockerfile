@@ -9,8 +9,7 @@ RUN curl -sL https://deb.nodesource.com/setup_7.x | bash - \
     && apt-get update -qq
 
 # install nodejs and yarn
-RUN apt-get install -y build-essential nodejs=7.9.0-1nodesource1~jessie1 \
-    yarn
+RUN apt-get install -y build-essential nodejs yarn
 
 # for rails using db
 RUN apt-get install -y mariadb-client
