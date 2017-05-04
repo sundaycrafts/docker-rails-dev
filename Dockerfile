@@ -14,10 +14,6 @@ RUN apt-get install -y build-essential nodejs yarn
 # for rails using db
 RUN apt-get install -y mariadb-client
 
-# for avoid exec bundler via root user
-RUN useradd -ms /bin/bash user
-USER user
-
 # move /app
 ENV APP_HOME /app
 WORKDIR ${APP_HOME}
